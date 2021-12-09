@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>965883362693-n0k9t1vah2as770p1h8utt4uoknh11gf.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.965883362693-n0k9t1vah2as770p1h8utt4uoknh11gf</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>965883362693-c6lht0kgi6apkqeuk3d3ejr5d1igtvpq.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyADOxS1SKDUG5x_R155Kb2C1RW_FrCtRmA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>965883362693</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>br.com.lucascouto.moviechat</string>
+	<key>PROJECT_ID</key>
+	<string>movie-chat-dfedd</string>
+	<key>STORAGE_BUCKET</key>
+	<string>movie-chat-dfedd.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:965883362693:ios:8565f641965ae0e4f458ec</string>
+</dict>
+</plist>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "965883362693",
+    "project_id": "movie-chat-dfedd",
+    "storage_bucket": "movie-chat-dfedd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:965883362693:android:4f0109ac4a9a744ff458ec",
+        "android_client_info": {
+          "package_name": "br.com.lucascouto.moviechat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "965883362693-c6lht0kgi6apkqeuk3d3ejr5d1igtvpq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.lucascouto.moviechat",
+            "certificate_hash": "784d4edc93caec61bd70266be8ae92e820991200"
+          }
+        },
+        {
+          "client_id": "965883362693-rr1dj1uh1nk7lnlhq6lb6i5fo4g3b2oc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhnlfkcatFO_ipnq0qQqW6ciN3fa2KAjo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "965883362693-rr1dj1uh1nk7lnlhq6lb6i5fo4g3b2oc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

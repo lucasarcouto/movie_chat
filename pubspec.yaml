@@ -1,0 +1,40 @@
+name: movie_chat
+description: A new Flutter project.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # Firebase
+  # Flutter plugin for Firebase Core, enabling connecting to multiple Firebase apps
+  firebase_core: ^1.8.0
+  # Flutter plugin for Cloud Firestore, a cloud-hosted, noSQL database with live synchronization and offline support on Android and iOS
+  cloud_firestore: ^2.5.4
+
+  # Flutter Widgets that make it easy to implement the BLoC (Business Logic Component) design pattern. Built to be used with the bloc state management package
+  flutter_bloc: ^8.0.0
+
+  # A Dart package that helps to implement value based equality without needing to explicitly override == and hashCode
+  equatable: ^2.0.3
+
+  # Simple direct Service Locator that allows to decouple the interface from a concrete implementation and to access the concrete implementation from everywhere in your App
+  get_it: ^7.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^1.0.0
+
+flutter:
+
+  uses-material-design: true
