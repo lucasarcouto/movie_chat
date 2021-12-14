@@ -77,7 +77,7 @@ class _MovieChatScreenState extends State<MovieChatScreen> {
             onWillPop: () async => state is! MovieChatLoading,
             child: Scaffold(
               appBar: AppBar(
-                title: Text("${widget.movie.title} (${widget.movie.title})"),
+                title: Text("${widget.movie.title} (${widget.movie.year})"),
               ),
               body: Column(
                 children: [
