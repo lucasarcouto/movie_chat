@@ -1,7 +1,7 @@
 import 'package:dartz/dartz.dart';
 
+import '../../../core/services/data/movies/movies_response.dart';
 import '../../../core/services/error_handling/failures.dart';
-import '../../../core/services/response/movies_response.dart';
 import '../../../core/usecases/usecase.dart';
 import '../../repositories/movies_repository.dart';
 

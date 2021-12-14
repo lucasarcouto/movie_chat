@@ -1,48 +1,26 @@
-class Movie {
+class ChatMessage {
+  String uuid;
+  String userUuid;
+  String userName;
+  String movieId;
   int date;
-  User ;
-  String nameSender;
-  String runtime;
-  String revenue;
-  String rating;
-  String rank;
-  String metascore;
-  List<String> genres;
-  String director;
-  String description;
-  List<String> actors;
+  String message;
 
-  Movie(
-      {this.year = "",
-      this.votes = "",
-      this.title = "",
-      this.runtime = "",
-      this.revenue = "",
-      this.rating = "",
-      this.rank = "",
-      this.metascore = "",
-      this.genres = const [],
-      this.director = "",
-      this.description = "",
-      this.actors = const []});
+  ChatMessage({
+    this.uuid = "",
+    this.userUuid = "",
+    this.userName = "",
+    this.movieId = "",
+    this.date = -1,
+    this.message = "",
+  });
 
-  factory Movie.fromJson(Map<String, dynamic> json) {
-    List<dynamic>? listActors = json['actors'];
-    List<String> actors = listActors != null ? List.from(listActors) : [];
-
-    return Movie(
-      year: json['year'],
-      votes: json['votes'],
-      title: json['title'],
-      runtime: json['runtime'],
-      revenue: json['revenue'],
-      rating: json['rating'],
-      rank: json['rank'],
-      metascore: json['metascore'],
-      genres: json['genres'] ?? [],
-      director: json['director'],
-      description: json['description'],
-      actors: actors,
-    );
-  }
+  Map<String, dynamic> toData() => {
+        'uuid': uuid,
+        'user_uuid': userUuid,
+        'user_name': userName,
+        'movie_id': movieId,
+        'date': date,
+        'message': message,
+      };
 }

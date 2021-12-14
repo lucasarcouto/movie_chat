@@ -1,16 +1,38 @@
 # movie_chat
 
-A new Flutter project.
+Project that loads a movie list and have the option to chat about them.
 
-## Getting Started
+## How to run the application
 
-This project is a starting point for a Flutter application.
+1. Setup Firebase account, add Android and iOS apps, and Create a Cloud Firestore database
+2. Download google-services.json and move it to ../android/app/
+3. Download GoogleService-Info.plist and move it to ../ios/Runner/
+4. Build and run the project
 
-A few resources to get you started if this is your first Flutter project:
+## Architecture used in this project
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+In flutter, it is specially important to implement an architecture that keeps the code organized, since the code that builds UI is written in the same language as business logic is written.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+That the reason why in this project concepts of Clean Architecture, by Robert C. Martin, were implemented to try and keep everything in their own places.
+
+Besides that, it is used BLoC to manage states and add another layer of separation between UI and business code.
+
+## Benefitial improvements to the project
+
+- Finish setting up iOS side of things for Cloud Firestore
+
+- Improve iOS & macOS build times (https://firebase.flutter.dev/docs/firestore/overview/#4-optional-improve-ios--macos-build-times)
+
+- Add Crashlytics
+
+- Implement real authentication flow
+
+- Standardize fonts, styles e widgets into their own classes to facilitate changes
+
+- Connect messages to a user firestore document
+
+- Movies list: Alphabet scroll, filters (score, name, year...), search by name
+
+- License images and customize app icon
+
+- Improve UI as a whole. A better looking app is always a nice thing.

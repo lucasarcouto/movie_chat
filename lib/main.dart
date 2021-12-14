@@ -1,6 +1,8 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'domain/entities/movie_entity.dart';
+import 'presentation/authentication/authentication.dart';
 
 import 'core/services/localizations/localizations.dart';
 import 'core/services/navigation/navigation_service.dart';
@@ -19,10 +21,12 @@ void main() async {
   await di.init();
 
   // Run Application
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -42,20 +46,31 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       onGenerateRoute: (routeSettings) {
         switch (routeSettings.name) {
-          case Routes.MOVIES_LIST:
+          //! Authentication
+          case Routes.authentication:
+            return MaterialPageRoute(
+                builder: (context) => const AuthenticationScreen(),
+                settings: routeSettings);
+
+          //! Movie Chat
+          case Routes.moviesList:
             return MaterialPageRoute(
                 builder: (context) => const MoviesListScreen(),
                 settings: routeSettings);
 
-          //! Features Presentation
-          case Routes.MOVIE_CHAT:
+          //! Movie Chat
+          case Routes.movieChat:
             return MaterialPageRoute(
-                builder: (context) => const MovieChatScreen(),
+                builder: (context) => MovieChatScreen(
+                    movie: routeSettings.arguments != null &&
+                            routeSettings.arguments is MovieEntity
+                        ? routeSettings.arguments as MovieEntity
+                        : MovieEntity()),
                 settings: routeSettings);
 
           default:
             return MaterialPageRoute(
-                builder: (context) => const MoviesListScreen(),
+                builder: (context) => const AuthenticationScreen(),
                 settings: routeSettings);
         }
       },

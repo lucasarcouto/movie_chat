@@ -1,7 +1,14 @@
 {
+    "welcome_movie_chat": "Welcome to Movie Chat!",
+    "whats_your_name": "What's your name?",
+    "sign_in": "Sign In",
+
     "movies_list": "Movies List",
 
     "movies_list_loading": "Movies list is loading.\n\nPlease wait a moment...",
 
-    "error_default_message": "There was an error executing the command, please try again."
+    "write_comment": "Write a comment",
+
+    "error_default_message": "There was an error executing the command, please try again.",
+    "error_empty_name": "The NAME field cannot be empty"
 }

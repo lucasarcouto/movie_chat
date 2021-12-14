@@ -44,6 +44,12 @@ dependencies:
   # A collection of loading indicators animated with flutter
   flutter_spinkit: ^5.1.0
 
+  # RFC4122 (v1, v4, v5) UUID Generator and Parser for all Dart platforms (Web, VM, Flutter)
+  uuid: ^3.0.5
+
+  # Flutter plugin for reading and writing simple key-value pairs. Wraps NSUserDefaults on iOS and SharedPreferences on Android
+  shared_preferences: ^2.0.11
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -54,4 +60,5 @@ flutter:
   uses-material-design: true
 
   assets:
+    - assets/images/
     - i18n/

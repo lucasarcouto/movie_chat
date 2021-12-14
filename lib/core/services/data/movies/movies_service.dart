@@ -2,9 +2,9 @@ import 'dart:convert';
 
 import 'package:http/http.dart';
 
-import '../../../data/models/movie.dart';
-import '../error_handling/service_errors.dart';
-import '../response/movies_response.dart';
+import '../../../../data/models/movie.dart';
+import '../../error_handling/service_errors.dart';
+import 'movies_response.dart';
 
 const moviesListURL =
     'https://tender-mclean-00a2bd.netlify.app/mobile/movies.json';
@@ -33,9 +33,7 @@ class MoviesService {
       }
 
       return serviceResponse;
-    } catch (ex, stack) {
-      print("<debug> ex: $ex");
-      print("<debug> stack: $stack");
+    } catch (ex) {
       return MoviesResponse(error: localError, errorCode: -1, movies: const []);
     }
   }

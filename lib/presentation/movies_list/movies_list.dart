@@ -87,8 +87,9 @@ class _MoviesListScreenState extends State<MoviesListScreen> {
                             child: Text(_moviesList[index].description)),
                         trailing: const Icon(Icons.keyboard_arrow_right),
                         contentPadding: const EdgeInsets.all(8),
-                        onTap: () => injection<NavigationService>()
-                            .pushNamed(Routes.MOVIE_CHAT),
+                        onTap: () => injection<NavigationService>().pushNamed(
+                            Routes.movieChat,
+                            arguments: _moviesList[index]),
                       );
                     },
                     itemCount: _moviesList.length,

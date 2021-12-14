@@ -13,3 +13,12 @@ class ServerFailure extends Failure {
   @override
   List<Object> get props => [errorCode, exception];
 }
+
+class CacheFailure extends Failure {
+  final dynamic exception;
+
+  const CacheFailure({this.exception});
+
+  @override
+  List<Object> get props => [exception];
+}

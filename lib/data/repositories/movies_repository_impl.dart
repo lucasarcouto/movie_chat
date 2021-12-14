@@ -2,8 +2,8 @@ import 'dart:async';
 
 import 'package:dartz/dartz.dart';
 
+import '../../core/services/data/movies/movies_response.dart';
 import '../../core/services/error_handling/failures.dart';
-import '../../core/services/response/movies_response.dart';
 import '../../domain/repositories/movies_repository.dart';
 import '../datasources/remote/movies_remote_data_source.dart';
 

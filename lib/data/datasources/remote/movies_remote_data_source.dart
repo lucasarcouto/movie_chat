@@ -1,5 +1,5 @@
-import '../../../core/services/movies/movies_service.dart';
-import '../../../core/services/response/movies_response.dart';
+import '../../../core/services/data/movies/movies_response.dart';
+import '../../../core/services/data/movies/movies_service.dart';
 
 abstract class MoviesRemoteDataSource {
   Future<MoviesResponse> getMovies();

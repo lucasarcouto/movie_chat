@@ -1,4 +1,4 @@
-import '../../../data/models/movie.dart';
+import '../../../../data/models/movie.dart';
 
 class MoviesResponse {
   int error;

@@ -27,6 +27,8 @@ class MovieEntity extends Movie {
     this.description = description;
     this.actors = actors;
   }
+
+  String get uuid => year + "_" + title.toLowerCase().replaceAll(" ", "_");
 }
 
 extension MovieParsing on MovieEntity {

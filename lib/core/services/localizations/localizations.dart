@@ -73,8 +73,15 @@ class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalization> {
   bool shouldReload(_AppLocalizationsDelegate old) => false;
 }
 
+const welcomeMovieChat = "welcome_movie_chat";
+const whatsYourName = "whats_your_name";
+const signIn = "sign_in";
+
 const moviesList = "movies_list";
 
 const moviesListLoading = "movies_list_loading";
 
+const writeComment = "write_comment";
+
 const errorDefaultMessage = "error_default_message";
+const errorEmptyName = "error_empty_name";

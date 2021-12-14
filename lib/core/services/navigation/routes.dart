@@ -1,6 +1,10 @@
 class Routes {
-  static const String MOVIES_LIST = '/';
+  //! Authentication
+  static const String authentication = '/';
+
+  //! Movies List
+  static const String moviesList = '/movies_list';
 
   //! Movie Chat
-  static const String MOVIE_CHAT = '/movie_chat';
+  static const String movieChat = '/movie_chat';
 }
